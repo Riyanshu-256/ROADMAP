@@ -71,7 +71,7 @@ Start date assumption: **Nov 15, 2025** (matches your plan). For each item: **wh
 
 ---
 
-## 1) HTML — (Core) — **2 weeks**
+## 1) HTML — (Core) — **2 weeks** 🗸
 
 * **What:** Document structure & semantics (headings, forms, accessibility).
 * **Why:** Browser reads HTML first; semantic HTML = better SEO + accessibility + interview basics.
@@ -80,7 +80,7 @@ Start date assumption: **Nov 15, 2025** (matches your plan). For each item: **wh
 
 ---
 
-## 2) CSS (Flexbox & Grid, responsive) — (Core) — **2–3 weeks**
+## 2) CSS (Flexbox & Grid, responsive) — (Core) — **2–3 weeks**  🗸
 
 * **What:** Styling & layout (responsive mobile-first design).
 * **Why:** Good UI = recruiter’s first impression. Grid/Flex for layouts.
