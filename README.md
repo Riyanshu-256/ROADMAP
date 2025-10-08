@@ -45,7 +45,7 @@ Do **Priority A** perfectly. Build **2 flagship projects** (front + back + deplo
 
 I number them 1 → 12: finish #1 before moving to #2 etc. You may overlap DSA with everything below (DSA is daily, not sequential).
 
-### 1) HTML ✅ / CSS (Responsive) ✅ — **2 weeks** 
+### 1) HTML  / CSS (Responsive)  — **2 weeks**  🗸
 
 * **What / Why:** Basic building blocks of every web UI. Recruiters notice polish. You must make a pixel-correct portfolio and components.
 * **Deliverable:** Live portfolio + 2 small UI pages (one responsive blog/project page, one contact form).
