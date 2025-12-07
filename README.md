@@ -1,383 +1,520 @@
-# Master-Roadmap
-
-A **single, battle-ready roadmap** you can follow start-to-finish. split it exactly:
-
-* **DSA plan (one place)** — daily/weekly cadence, month-by-month targets.
-* **Technology roadmap (sequence-wise, numbered)** — every tech you actually *need*, with **what it is**, **why it matters**, **deliverable(s)** and **practical resources**.
-* **Timelines** for every item and exact guidance on when to open-source, apply for internships, and run projects.
-* I kept it focused — **core required first**, then **high-value extras** (AI/infra). No fluff.
-
-I also checked current industry signals (popularity and trends) so this list is aligned to what’s being used and hired for today. Key trend summary below (sources included). ([stackoverflow.blog][1])
 
 ---
 
-# Executive summary — what to learn (short)
+## 🎯 Goal
 
-1. **DSA** — do this every day; it’s mandatory for product roles.
-2. **Frontend** — HTML, CSS, JavaScript → React → Next.js. (Deliver: polished portfolio + 1 full-stack app)
-3. **Backend** — Node.js (JS) → Express / NestJS → databases (Postgres + Mongo) → TypeScript. (Deliver: production-like API)
-4. **DevOps basics** — GitHub Actions, Docker, deploy on AWS. (Deliver: CI/CD pipeline + deployed service)
-5. **Infra & scale (later)** — Kubernetes, Terraform, monitoring, message queues. (Deliver: microservices on k8s)
-6. **AI/ML product skills (edge)** — embeddings, LangChain, vector DBs for RAG. (Deliver: RAG chatbot)
-7. **System Design + Core CS** — OS, DB internals, networking, LLD/HLD practice. (Ongoing)
-8. **Soft skills** — OSS contributions, internships, mock interviews, resume/blogs.
+Land a **Software Development Engineer (SDE/SWE)** role at a **FAANG** (or FAANG-level) company through **off-campus** routes — salary target: **₹20+ LPA**.
 
-Trends that justify these priorities: Python & TypeScript growth (AI + safer JS), continued dominance of JS for web, Kubernetes/cloud-native adoption, and fast uptake of vector DBs for RAG apps. ([stackoverflow.blog][1])
+<br>
 
 ---
 
-# Part A — DSA (all-in-one plan)
+<br>
 
-You said you’ll do DSA “inside-wise” — here’s the compact, no-fluff program.
+## 🧭 Core Roadmap Overview
 
-**Goal:** 12–18 months → be comfortable with medium → hard LeetCode + 500 quality problems over time.
+You’ll need to master **5 pillars**:
 
-**Daily**
+1. **Data Structures & Algorithms (DSA)**
+2. **Computer Science Fundamentals**
+3. **Development & Projects (Proof of Skill)**
+4. **System Design & Scalability (for big interviews)**
+5. **Interview Strategy & Resume/LinkedIn Optimization**
 
-* **60–120 min**: focused practice (one topic per day). Start with arrays/strings → two-pointers → hashmaps → sliding window → stacks/queues → trees → graphs → dp → greedy/heaps → sorting/searching.
-* **1 timed LeetCode problem (45–60 min)** 3×/week (simulate interview pressure).
-
-**Weekly**
-
-* **1 mock session** (90–120 min): 2 problems (one medium, one hard) + code review.
-* **1 contest** (Codeforces/CodeChef) every 1–2 weeks (optional, huge long-term benefit).
-
-**Monthly targets**
-
-* Month 1–3: Master arrays/strings/hashmaps + 150 easy→medium problems.
-* Month 4–9: Trees/graphs + medium problems (200 more).
-* Month 10–15: Dynamic programming, advanced graphs, tough mediums/hards (150-200).
-* Ongoing: Review patterns, redo mistakes, do timed mocks.
-
-**Resources**
-
-* **GeeksforGeeks** (concepts & your course).
-* **LeetCode** (practice + premium patterns if you can).
-* **NeetCode / Blind 75** (pattern lists).
-* **System design** (see below) — starts after you have backend basics.
-
-**Deliverables (DSA)**
-
-* Completed folders on GitHub with solved problems (well-commented).
-* 3 timed mock recordings / transcripts showing improvement.
+<br>
 
 ---
 
-# Part B — Technology roadmap (numbered, sequence-wise)
+<br>
 
-Start date assumption: **Nov 15, 2025** (matches your plan). For each item: **what**, **why**, **deliverable**, **time estimate**, **resources**.
+## 🧩 1. Data Structures & Algorithms (DSA)
 
-> NOTE: I mark **(Core)** for must-have before placements, **(High-value)** for important extras, **(Optional/Cert)** for optional but useful.
+This is the foundation — you *must* be elite here.
 
----
+### 📚 Topics to Master
 
-## 1) HTML — (Core) — **2 weeks**
+#### Arrays & Strings
 
-* **What:** Document structure & semantics (headings, forms, accessibility).
-* **Why:** Browser reads HTML first; semantic HTML = better SEO + accessibility + interview basics.
-* **Deliverable:** Portfolio pages with semantic structure + an accessible form.
-* **Resources:** MDN HTML docs — [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* Sliding Window, Two Pointers, Prefix Sum
+* Kadanes, Subarray problems, Rotations
 
----
+#### Linked List
 
-## 2) CSS (Flexbox & Grid, responsive) — (Core) — **2–3 weeks**
+* Reversal, Merge, Cycle detection, LRU Cache logic
 
-* **What:** Styling & layout (responsive mobile-first design).
-* **Why:** Good UI = recruiter’s first impression. Grid/Flex for layouts.
-* **Deliverable:** Responsive portfolio (mobile-first), CSS variables, accessible color contrast.
-* **Resources:** MDN CSS — [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+#### Stack & Queue
 
----
+* Next Greater/Smaller, Monotonic Stack, Min Stack
+* Queue with two stacks, circular queue, deque
 
-## 3) JavaScript (ES6+, async) — (Core) — **6–8 weeks**
+#### Trees
 
-* **What:** Language of web — closures, event loop, promises, async/await, modules.
-* **Why:** Drives both frontend and Node backend. A deep JS understanding prevents bugs later.
-* **Deliverable:** 5 micro-tasks (debounce, promise→async refactor, DOM widget, event-loop demo, module bundling).
-* **Resources:** MDN JS Guide — [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+* Traversals, BST operations, Diameter, LCA
+* Binary Tree ↔ Doubly Linked List
 
----
+#### Graphs
 
-## 4) Git & GitHub (PR workflow) — (Core) — **1 week**
+* BFS, DFS, Topo Sort, Dijkstra, Union-Find (DSU)
+* Minimum Spanning Tree (Kruskal/Prim)
+* Graph coloring, Cycle detection, Strongly connected components
 
-* **What:** Version control, branches, PRs, GitHub Actions basics.
-* **Why:** Required for collaborations, OSS, internships.
-* **Deliverable:** Repo with feature branch → PR → merged; basic CI trigger.
-* **Resources:** GitHub Learning Lab — [https://github.com/skills/introduction-to-github](https://github.com/skills/introduction-to-github)
+#### Recursion & Backtracking
 
----
+* Subsets, Permutations, N-Queens, Sudoku Solver
 
-## 5) Command Line & Linux basics — (Core) — **1–2 weeks**
+#### DP (Dynamic Programming)
 
-* **What:** Shell, process management, SSH, basic package management.
-* **Why:** Deployments, remote servers, docker, kubectl all assume comfort with CLI.
-* **Deliverable:** SSH into an EC2 instance, run your app.
+* 1D: Fibonacci, House Robber, Jump Game
+* 2D: Knapsack, Grid Paths, LCS, Matrix Chain
+* Pattern-based thinking (memoization → tabulation → space optimization)
 
----
+#### Greedy
 
-## 6) Browser DevTools & Debugging — (Core) — **1 week**
+* Intervals, Activity Selection, Huffman Encoding
 
-* **What:** DOM inspection, network tab, performance, profiling.
-* **Why:** Speed up debugging and front-end performance tuning.
-* **Deliverable:** Fix a performance issue (e.g., long paint time) and document root cause.
+#### Heap / Priority Queue
 
----
+* Top-K problems, Merge K lists, Median finder
 
-## 7) React (Functional components + hooks) — (Core) — **6–8 weeks**
+#### Bit Manipulation
 
-* **What:** Component-based UI, hooks, state management basics.
-* **Why:** Most frontend roles expect React skills; large ecosystem.
-* **Deliverable:** React SPA of one project (connect to your API).
-* **Resources:** Your Udemy React courses (Maximilian/ZTM), official React docs.
+* Subsets generation, XOR tricks, Single Number
+
+<br>
 
 ---
 
-## 8) Next.js (Routing, SSR/SSG) — (Core) — **4 weeks**
+<br>
 
-* **What:** Framework for production React apps — file-based routing, SSR, server functions.
-* **Why:** Production-ready frontends, good for SEO and performance. Many product roles prefer Next.js.
-* **Deliverable:** Deploy portfolio or project on Vercel/Next with SSR pages.
-* **Resources:** Next.js docs, your Next.js Udemy course.
+### 🏋️ Practice Platforms
 
----
+* **LeetCode (Main)** – focus here.
+* **Codeforces** – for speed + problem-solving mindset.
+* **GeeksforGeeks** – for concept revision.
+* **InterviewBit** – for structured problem paths.
 
-## 9) Node.js (runtime) — (Core) — **4–6 weeks**
+#### Suggested Targets
 
-* **What:** JS runtime outside browser — async I/O, event loop.
-* **Why:** Backend for full-stack and many microservices. Learn request lifecycle, streams, performance pitfalls.
-* **Deliverable:** Basic REST API (users/products, auth).
-* **Resources:** ZTM Node course (you own), Jonas, Node.js docs.
+* 300+ quality LeetCode problems (covering all patterns)
+* At least **2 contests per week** on Codeforces or LeetCode.
+* Maintain a **streak-based system** (consistency beats volume).
 
----
-
-## 10) Express.js / Backend patterns — (Core) — **3–4 weeks**
-
-* **What:** Routing, middleware, validation, error handling.
-* **Why:** Build maintainable APIs; standard in many codebases.
-* **Deliverable:** Structured API with validation, middleware, logging.
+<br>
 
 ---
 
-## 11) Databases — Postgres (SQL) — (Core) — **3–4 weeks**
+<br>
 
-* **What:** Relational DB – transactions, joins, indexing.
-* **Why:** For financial/transactional data, ACID guarantees. Most serious systems use Postgres.
-* **Deliverable:** Orders/payments microservice with migrations + sample queries.
-* **Resources:** Postgres docs, Prisma (below).
+## 🧠 2. Core CS Subjects
 
----
+These are non-negotiable for FAANG interviews.
 
-## 12) Databases — MongoDB (NoSQL) — (Core) — **2–3 weeks**
+| Subject                    | Key Topics                                                             |
+| -------------------------- | ---------------------------------------------------------------------- |
+| **OS (Operating Systems)** | Process vs Thread, Deadlocks, Scheduling, Paging, Semaphores           |
+| **DBMS**                   | Normalization, Joins, Indexing, Transactions, ACID, Isolation Levels   |
+| **OOPs**                   | Polymorphism, Inheritance, Abstraction, Encapsulation, Design Patterns |
+| **CN (Computer Networks)** | TCP vs UDP, OSI model, HTTP/HTTPS, DNS, Load Balancing                 |
 
-* **What:** Document DB (JSON-like). Flexible schema for catalogs, product data.
-* **Why:** Fast prototyping & commonly used with Node.
-* **Deliverable:** Product catalog with indexes & aggregation pipeline.
-* **Resources:** Maximilian MongoDB course, MongoDB docs.
+➡ **Tip:** Learn from GFG, Neso Academy, and use YouTube playlists from Gate Smashers / CodeWithHarry (for quick revision).
 
----
-
-## 13) ORM / DB tools — Prisma (for Postgres) & Mongoose (Mongo) — (2 weeks)
-
-* **What:** Type-safe DB client (Prisma) and Mongo ODM (Mongoose).
-* **Why:** Faster dev & fewer SQL mistakes; Prisma integrates well with TypeScript.
-* **Deliverable:** Prisma schema + migrations + queries.
+<br>
 
 ---
 
-## 14) TypeScript (strict) — (Core) — **4–6 weeks**
+<br>
 
-* **What:** Typed superset of JS, interfaces, generics, strict mode.
-* **Why:** Type-safety at scale, required by many companies. **Important rule:** learn Node in JS first, then convert to TS.
-* **Deliverable:** Convert one Node project to TS strict (no `any`).
-* **Resources:** TypeScript handbook (tsconfig strict docs).
+## 💻 3. Development & Projects (Proof of Skill)
 
----
+This is where most fail in off-campus hiring. You must **show you can build**.
 
-## 15) Testing (Jest + Supertest + End-to-End) — (Core) — **3–4 weeks**
+### 🔧 Core Stack Options
 
-* **What:** Unit tests, integration tests, e2e (Playwright/Cypress).
-* **Why:** Production code must be testable; interviews look at testing knowledge.
-* **Deliverable:** CI running tests with coverage thresholds.
+Pick **ONE** of these paths and go deep:
 
----
+#### 🧱 Web Dev (most common)
 
-## 16) Docker & Docker Compose — (Core) — **2–3 weeks**
+* Frontend: React, Next.js
+* Backend: Node.js + Express / NestJS
+* Database: MongoDB or PostgreSQL
+* Add authentication, file uploads, caching, deployment (AWS/Vercel)
+* Optional: Docker, CI/CD, testing (Jest)
 
-* **What:** Containerize apps and local multi-service stacks.
-* **Why:** Makes deployments predictable; industry standard.
-* **Deliverable:** Multi-stage Dockerfile + docker-compose for API + Postgres + Redis.
+#### 🤖 AI / ML (only if you're genuinely interested)
 
----
+* Python, Numpy, Pandas, Scikit-learn
+* Build 3–4 solid models (classification, regression, NLP)
+* Showcase via Streamlit dashboards or Flask APIs
 
-## 17) Redis (cache, sessions) & Background Jobs (BullMQ) — (High-value) — **2–3 weeks**
+#### 📱 App Dev
 
-* **What:** In-memory store + job queue for async jobs.
-* **Why:** Improve latency, scale background processing (emails, image processing).
-* **Deliverable:** Implement caching & a job queue for email sending.
+* Kotlin/Flutter/React Native apps with APIs and local storage.
 
----
+### 🧩 Project Guidelines
 
-## 18) CI/CD — GitHub Actions (or GitLab CI) — (Core) — **2 weeks**
+Build **3–5 high-impact projects**, such as:
 
-* **What:** Automate tests, builds, deployments.
-* **Why:** Real-world engineering expects automated pipelines.
-* **Deliverable:** Pipeline: tests → build → push Docker image → deploy to staging.
+* Scalable Chat App (WebSocket, Redis, Node.js)
+* Real-time Collaboration Tool (like Google Docs)
+* E-commerce System (microservices + caching)
+* URL shortener (with analytics)
+* ML project deployed on cloud
 
----
+**Make all projects public on GitHub** and add proper README, live link, and short video demo.
 
-## 19) Cloud basics — AWS Free Tier (S3, EC2, RDS) — (Core) — **4 weeks**
-
-* **What:** Storage, compute, managed DBs.
-* **Why:** Deploy production apps and understand infra bills & IAM.
-* **Deliverable:** Deploy a small service on EC2 / use S3 for file storage.
+<br>
 
 ---
 
-## 20) System Design (LLD & HLD) — (Core; ongoing) — **6–12 months ongoing**
+<br>
 
-* **What:** Low-level: class designs; High-level: architecture for scale (caching, DB sharding, load balancing).
-* **Why:** Essential in senior interviews for 20+ LPA roles.
-* **Deliverable:** Design docs for URL shortener, chat system, e-commerce architecture.
-* **Resources:** Gaurav Sen (YouTube), *Designing Data-Intensive Applications*.
+## ⚙️ 4. System Design (after 5th sem)
 
----
+FAANG interviews often test system thinking.
 
-## 21) Kubernetes (k8s) — (High-value) — **6–8 weeks**
+* **Start small:** design URL shortener, cache, notification service
+* **Then:** scalable systems – Twitter feed, Uber backend, Instagram architecture
+* **Resources:**
 
-* **What:** Container orchestration (pods, services, ingress, HPA).
-* **Why:** Required for infra-heavy roles and real microservice deployments.
-* **Deliverable:** Run your microservices on minikube + deploy to EKS/GKE.
-* **Resources:** Kubernetes docs, CNCF materials. (Cloud Native adoption is high.) ([CNCF][2])
+  * “Grokking the System Design Interview”
+  * “System Design Primer” (GitHub)
+  * YouTube: Gaurav Sen, ByteByteGo
 
----
-
-## 22) Terraform (IaC) — (High-value) — **2–3 weeks**
-
-* **What:** Infrastructure as code for reproducible infra.
-* **Why:** Automates infra provisioning (S3, RDS, clusters).
-* **Deliverable:** Terraform to provision S3 + RDS + EKS.
+<br>
 
 ---
 
-## 23) Observability & Monitoring — (High-value) — **3–4 weeks**
+<br>
 
-* **What:** Prometheus (metrics) + Grafana (dashboards) + OpenTelemetry/Jaeger (tracing).
-* **Why:** For production reliability and debugging latency issues.
-* **Deliverable:** p50/p95 metrics dashboard + traces for slow endpoints.
+## 📄 5. Interview Prep, Resume, and Strategy
 
----
+### 🧾 Resume
 
-## 24) Message Queues / Streaming — Kafka or RabbitMQ — (High-value) — **3–4 weeks**
+* One-page, crisp, action verbs (“Built,” “Optimized,” “Deployed”)
+* Quantify results: “Reduced API latency by 40%”
+* Add GitHub + LinkedIn + Portfolio links
 
-* **What:** Decouple systems using async events.
-* **Why:** Real distributed systems use event-driven flow.
-* **Deliverable:** Order placed → event → analytics consumer pipeline running.
+### 🔍 Off-Campus Strategy
 
----
+* Apply on **LinkedIn**, **Indeed**, **AngelList**, **YCombinator startups**
+* **Use Referrals:** Connect with engineers, send short messages
+* Participate in **hackathons (Devpost, HackerEarth, Unstop)** – often lead to offers
+* Track openings via **Otta**, **Relevel**, **HackerRank Jobs**
 
-## 25) Vector Databases & RAG toolchain (LangChain, pgvector, Pinecone) — (High-value for AI product roles) — **4–8 weeks**
+### 💬 Mock Interviews
 
-* **What:** Vector DBs store embeddings for semantic search; LangChain orchestrates LLM chains.
-* **Why:** RAG chatbots and LLM products require vector search; adoption is growing fast. ([IBM][3])
-* **Deliverable:** RAG demo: embeddings pipeline → vector store → retrieval + LLM answer.
-* **Resources:** LangChain docs, pgvector docs, Pinecone docs.
+* Do **10–20 mocks** on Pramp / peers / Discord communities.
+* Record and analyze your mistakes.
 
----
-
-## 26) Security Basics (OWASP Top 10, JWT, auth best practices) — (Core) — **2 weeks**
-
-* **What:** XSS, CSRF, SQLi, secure auth flows.
-* **Why:** Everyone must know secure-by-default patterns.
-* **Deliverable:** Hardened API with input validation, rate-limiting, helmet, secure cookies.
+<br>
 
 ---
 
-## 27) Performance & Costs — (Operational) — **ongoing**
+<br>
 
-* **What:** Profiling, caching layers, infra cost awareness.
-* **Why:** Interviewers like numbers (p95 latency, cost per request).
-* **Deliverable:** Documentation with RPS & cost for your flagship project.
+## 🕒 6. Timeline (Starting Now)
+
+You’re in **3rd sem** → ideal timeline:
+
+| Semester    | Focus                                                      |
+| ----------- | ---------------------------------------------------------- |
+| **3rd–4th** | DSA (daily), OS/DBMS, 1 Dev project                        |
+| **5th–6th** | Strong projects + minor internships + System Design basics |
+| **7th**     | Heavy interview grind + mock interviews + apply off-campus |
+
+<br>
 
 ---
 
-## 28) Soft skills / Career (ongoing)
+<br>
 
-* **What:** Resume, LinkedIn, technical blog posts (3), targeted applications, alumni networking.
-* **When:** Start in parallel from Month 3; intensify before placement season.
-* **Deliverable:** 3 technical blog posts + polished resume + 10 mock interviews.
+## 🚀 Daily Routine (Sample)
+
+| Time          | Focus                            |
+| ------------- | -------------------------------- |
+| 6:00–9:00 AM  | DSA practice (2 problems/day)    |
+| 9:00–2:00 PM  | Classes / college                |
+| 2:00–5:00 PM  | Dev projects / learning          |
+| 5:00–7:00 PM  | CS fundamentals                  |
+| 8:00–10:00 PM | Revision / contests / networking |
+
+<br>
 
 ---
+
+<br>
 
 # Prioritization: what to learn first (short)
 
 1. HTML → CSS → JS (ES6) → Git → React → Node (JS) → Postgres/Mongo → TypeScript → Docker → Tests → Deploy to AWS. (All **Core**.)
 2. After core: Kubernetes, Terraform, Redis, Kafka, Observability. (Add **High-value** afterward.)
 3. AI features (LangChain, vector DBs) — start after you can deploy and run infra reliably (useful as differentiator for 20+ LPA).
+4. 
+<br>
 
 ---
 
-# Timeline (high-level, start Nov 15, 2025)
+<br>
 
-* **Nov 15 → Feb 2026 (3.5 months):** Foundations — HTML/CSS/JS/React basics/Git + DSA 60–90 min/day. Portfolio + 1 full-stack mini app.
-* **Mar → Jun 2026 (4 months):** Backend fundamentals — Node (JS), Express, MongoDB, Postgres+Prisma; start internships applications (Feb–Mar window). Begin OSS contributions mid-2026.
-* **Jul → Dec 2026 (6 months):** Productionize — TypeScript conversion, testing, Docker, Redis, CI/CD, AWS deploy. Start hackathons Apr 2026 onward.
-* **Jan → Jun 2027 (6 months):** Infra & scale — k8s, Terraform, observability, message queues.
-* **Jul 2027 → Jun 2028 (12 months):** Flagship projects (E-Commerce microservices + RAG chatbot), heavy system design, mock interviews, targeted job applications.
-* **Jul → Nov 2028:** Final hiring push / placement season.
+# Projects — exact set, sequence, and deadlines (build these *in this order*)
 
-(Adjust pace if you’re faster/slower — but keep DSA ongoing.)
+You must have **2 flagship projects** (one simple, one complex). Each must be deployed, typed (TS where possible), have tests, CI, and a clear README + architecture doc.
 
----
+### Project A (MUST, finish by **end of Foundations**)
 
-# When to open-source, internships, hackathons (exact)
+* **Type:** Full-stack CRUD app (React + Next.js front, Node/Express + Postgres/Mongo backend).
+* **Examples:** Job portal / Notes app with auth & roles.
+* **Deliverable:** Live link, GitHub repo, README + deployment guide.
+* **Deadline:** By end of Phase 1 (Nov15 → Feb28).
 
-* **Start OSS:** **Mid-2026** (after Node + Git foundations). Begin with docs/tests PRs → feature PRs by Q4 2026.
-* **Apply internships:** **Start Feb–Mar 2026** for Summer 2026. Keep applying rolling through 2027.
-* **Hackathons:** **From Apr 2026** once you have 1 full-stack app; aim for 3+ events in 2026 (good wins + network).
-* **Flagship projects for resume:** Start building end of **2026** and through **2027**.
+### Project B (FLAGSHIP, finish by **end of Productionize**)
 
----
+* **Type:** Production-like microservice app. E-commerce microservices or a social app (users, products/posts, payments, search).
+* **Must include:** Auth, payments stub, Redis cache, background jobs, Prisma/Postgres, Dockerized, CI, deployed staging.
+* **Deliverable:** Live staging, architecture doc (HLD + LLD), performance numbers (p50/p95).
+* **Deadline:** By end of Phase 3 (Jul–Dec 2026).
 
-# Deliverable list you must show publicly (minimum)
+### Project C (OPTIONAL EDGE)
 
-1. **Portfolio site** (live) — home, projects, contact.
-2. **GitHub** with 3 main repos: front-end app, backend API, infrastructure (Docker + Terraform).
-3. **Deployed staging URL** (AWS/Vercel) for at least one project.
-4. **TypeScript-converted API** in strict mode.
-5. **CI** that runs tests on PRs.
-6. **Microservices on k8s** (demo or local + doc).
-7. **RAG demo** (hosted or video demo).
-8. **3 technical blog posts** describing architecture + decisions + metrics.
+* **Type:** RAG chatbot or search + LLM integration (LangChain + vector DB).
+* **Why:** Differentiator for AI product roles.
+* **Deadline:** After Projects A & B, Q3–Q4 2027.
+
+<br>
 
 ---
 
-# Practical study resources (quick list by tech)
+<br>
 
-* **HTML/CSS/JS:** MDN Web Docs.
-* **React/Next.js:** Official docs + your Udemy React & Next.js courses.
-* **Node/Express:** ZTM Node course, Jonas Schmedtmann.
-* **MongoDB:** Maximilian course; Mongo docs.
-* **Postgres/Prisma:** Prisma docs + Postgres docs.
-* **TypeScript:** TypeScript handbook + strict tsconfig guides.
-* **Docker:** Docker docs (multi-stage builds).
-* **Kubernetes:** k8s docs + minikube tutorials.
-* **CI/CD:** GitHub Actions docs.
-* **DSA:** GeeksforGeeks (course you’re on) + LeetCode + NeetCode.
-* **System Design:** Gaurav Sen (YouTube) + *Designing Data-Intensive Applications*.
-* **LangChain / Vector DB:** LangChain docs + pgvector / Pinecone docs.
-  (If you want, I can paste a one-line link set per tech.)
+## Hackathons, CP and Contests — WHEN & HOW
+
+* **Start contests:** Month 2 (Dec 2025) — CodeChef/Codeforces monthly participation. Aim 1 contest/2 weeks if possible.
+* **Competitive programming:** Optional but beneficial. Do CP for 3–6 months if you want to sharpen speed. Don’t let CF consume your project time.
+* **Hackathons:** Start after Project A is deployed (March 2026). Join 2–3 hackathons in next 6 months (Apr–Sep 2026). Use hackathons to:
+
+  * Build quick features for your portfolio.
+  * Network & win recognitions → good resume bullets.
+* **How to succeed in hackathons:** Keep scope tiny, reuse existing codebase, build one real feature, focus on deployment, prepare a 3-minute demo.
+
+<br>
 
 ---
 
-# Final blunt advice — what I’ll not sugarcoat
+<br>
 
-* **Do DSA daily**. Great projects + zero DSA = no invite to most product interviews.
-* **Don’t learn TypeScript first.** Learn Node in JS → convert to TS. You’ve already got that in your earlier plan — keep it.
-* **Don’t spread yourself too thin early.** Focus: Frontend + Backend + 1 deployed project. Add infra after you can deploy and maintain a service.
-* **Use internships & OSS as proof.** Real experience beats certificates. Apply early and often.
+## Internships — when to apply, what roles, and process
+
+**When to apply:** Rolling from **Feb–Mar 2026** (start applying as soon as you have Project A + ~150 DSA problems). Apply continuously.
+
+**Roles to target:**
+
+* **SDE / Backend Intern (Node/TS/Java)** — prefer Node + Postgres/Mongo.
+* **Full-stack Intern** — React + Node.
+* **Platform / Tools Intern** — if you have infra skills (later).
+
+**Application process (typical):**
+
+1. **Online test** / coding challenge (HackerEarth/CodeSignal/Company portal).
+2. **Technical phone screen** - 1 medium DSA problem + behavioral.
+3. **Onsite / Virtual interview** - 2–3 rounds: DSA, system design (small), backend design + behavioral.
+
+**How to apply effectively:**
+
+* Start with targeted companies (startups + product companies) with 2–3 tailored applications/day.
+* Use alumni & LinkedIn referrals heavily.
+* Keep one “interview-ready” resume version and a short pitch.
+
+<br>
 
 ---
 
-[1]: https://stackoverflow.blog/2025/01/01/developers-want-more-more-more-the-2024-results-from-stack-overflow-s-annual-developer-survey/?utm_source=chatgpt.com "the 2024 results from Stack Overflow's Annual Developer ..."
-[2]: https://www.cncf.io/wp-content/uploads/2025/04/cncf_annual_survey24_031225a.pdf?utm_source=chatgpt.com "Cloud Native 2024"
-[3]: https://www.ibm.com/think/topics/vector-database?utm_source=chatgpt.com "What Is A Vector Database?"
+<br>
+
+## Resume & LinkedIn — exact checklist (do this before applying)
+
+**Resume**
+
+* One page only. Top 3 bullets first: (1) flagship project + live URL, (2) internships/OSS (if any), (3) DSA achievement / contest rank (if good).
+* For each project: one line summary (what it does), tech stack, 2 measurable bullets (what you built + results e.g., 99% test coverage, 1000 monthly users simulated, 200ms p95).
+* Skills section: list languages, frameworks, infra. Prioritize those you know well.
+* Add links: GitHub, live project URL, LinkedIn.
+
+**LinkedIn**
+
+* Professional headline: “Aspiring SDE | React • Node • Postgres • TypeScript | Looking for internships (Summer 2026)”.
+* Summary: 3–4 lines: what you build, what you’re learning, what you want.
+* Projects: add repos and short descriptions.
+* Post 1 technical writeup every 6–8 weeks.
+
+**Portfolio**
+
+* Home, projects, contact + downloadable resume.
+
+<br>
+
+---
+
+<br>
+
+## EXACT TIMELINE (high-level phases — dates included)
+
+**Phase 0 — Prep (Now → Nov 14, 2025)**
+
+* Read MDN basics, set up GitHub, pick start date, prepare daily schedule.
+
+**Phase 1 — Foundations (Nov 15, 2025 → Feb 28, 2026) — 3.5 months**
+
+* HTML/CSS (2 weeks), JS (6 weeks), React (6 weeks overlapping), Project A deployed, Git, DSA daily.
+* **Milestone**: Live portfolio + Project A + 150 DSA problems.
+
+**Phase 2 — Backend Core (Mar 1 → Jun 30, 2026) — 4 months**
+
+* Node + Express, Postgres + Prisma, Mongo basics, Docker, basic tests. Start applying internships (Feb–Mar window) with Project A. Start OSS small PRs. Continue DSA.
+* **Milestone**: REST API deployed + internship interviews ongoing.
+
+**Phase 3 — Productionize (Jul 1 → Dec 31, 2026) — 6 months**
+
+* TypeScript conversion, testing, Dockerized multi-service, Redis + job queue, CI, initial monitoring. Hackathons + OSS contributions. Project B development and deployment begins.
+* **Milestone**: Project B deployed (flagship), CI + Docker + tests.
+
+**Phase 4 — System Design & Infra (Jan 1 → Jun 30, 2027) — 6 months**
+
+* System design deep-dive, Kubernetes basics (optional), Terraform basics (optional), advanced cloud features (Lambda/S3). Continue DSA (hard problems).
+* **Milestone**: 3 design docs + k8s demo (optional).
+
+**Phase 5 — Flagship & Interview Push (Jul 1, 2027 → Jun 30, 2028) — 12 months**
+
+* Build RAG/demo if desired; heavy mock interviews; targeted applications to product companies; placement/hiring push.
+* **Milestone**: 2 flagship projects + 3 blog posts + 50 mock interviews.
+
+**Note:** That full path is ~18–24 months of aggressive, consistent work. If you speed up, you can compress phases, but expect heavy workload.
+
+<br>
+
+---
+
+<br>
+
+## WEEK-BY-WEEK sample (first 12 weeks — actionable daily split)
+
+Average target: **8 hours/day** sustainable (you said 15/day doable — I don’t advise 15/day long-term).
+
+**Weekdays**
+
+* 1.5–2 hr DSA (topic + one problem).
+* 2.0–3.0 hr JS/React learning + exercises.
+* 1.5–2.0 hr Project work (feature implementation).
+* 0.5–1.0 hr GitHub / documentation / small tests.
+* 0.5 hr review (error logs, previous mistakes).
+
+**Weekends**
+
+* 3–4 hr deep DSA (timed mock).
+* 3–6 hr larger project features & deploy tasks.
+* 1–2 hr reading system design / blog writing.
+
+<br>
+
+---
+
+<br>
+
+## Which languages: Java vs C++ vs Python vs JS?
+
+* **Frontend + Backend:** stick with **JavaScript/TypeScript** (React + Node) — fastest to build full-stack.
+* **DSA interviews:** Stick with **Java** (you know it); it’s acceptable for FAANG. **C++** gives micro advantage in CP but not necessary. Only switch to C++ if you want to dominate CF problems regularly.
+* **When to use Python:** good for prototyping and some interviews, but not needed if you’re comfortable with Java/JS.
+
+<br>
+
+---
+
+<br>
+
+## What to cut / avoid (blunt)
+
+* Don’t do **Kubernetes/Terraform/Prometheus/Kafka/RAG** before you have 2 deployed projects + solid DSA. These are later-phase skills.
+* Don’t chase every new tool. Build 2 real deployed projects and tests first.
+* Don’t spend >2 weeks on CSS animations — focus on functionality and polish.
+
+<br>
+
+---
+
+<br>
+
+## How to interview & apply — process & schedule
+
+* **Start applying** as soon as Project A + 150 DSA problems are done (end of Phase 1). Apply to internships & junior SDE roles.
+* **Target list:** product startups, mid-size product companies, top small FAANG-like companies for internships.
+* **Application tempo:** 5–15 applications/day until interviews convert.
+* **Interview prep:** 2 weeks before scheduled interviews drop your learning focus and do daily timed LeetCode + mock interviews with peers.
+
+<br>
+
+---
+
+<br>
+
+## Measurable deliverables by checkpoints (so you can verify progress)
+
+**End Phase 1 (Feb 28, 2026):**
+
+* Live portfolio.
+* Project A (deployed).
+* GitHub with 150 DSA problems.
+* 1 solid resume + LinkedIn ready.
+
+**End Phase 2 (Jun 30, 2026):**
+
+* REST API + DB deployed.
+* First internship interviews done.
+* 250 DSA problems solved.
+
+**End Phase 3 (Dec 31, 2026):**
+
+* Flagship Project B deployed (microservices/CI/Redis).
+* OSS contributions started.
+* Hackathon wins/mentions (1–2).
+* 350–400 DSA problems.
+
+**End Phase 5 (Jun 30, 2028):**
+
+* Multiple interviews cleared, targeted offers, system design strong.
+
+<br>
+
+---
+
+<br>
+
+## Resources (short, practical list)
+
+* **DSA:** LeetCode, GeeksforGeeks (your course), NeetCode, Blind 75.
+* **Frontend:** MDN docs, React docs, Next.js docs, Udemy React courses you own.
+* **Backend:** ZTM Node course (you have), Jonas Schmedtmann Node bootcamp.
+* **DB/ORM:** Postgres docs, Prisma docs, MongoDB docs.
+* **TS:** TypeScript Handbook.
+* **Docker/AWS:** Docker docs; AWS Free Tier tutorials.
+* **Testing:** Jest docs; Supertest; Playwright/Cypress.
+* **System design:** Gaurav Sen (YouTube), *Designing Data-Intensive Applications*.
+* **RAG/vector:** LangChain docs, pgvector docs (only if pursuing AI product role).
+
+<br>
+
+---
+
+<br>
+
+## Final blunt advice (no drama — what I’d tell myself)
+
+1. **Do Priority A perfectly.** Don’t half-learn things. A solid deployed project + TS + tests + DSA = 80% of hires.
+2. **Consistency beats intensity.** 6–8 hrs/day sustained for 18 months > 15 hrs/day for 3 months then burnout.
+3. **Apply early and often.** Don’t wait for everything to be perfect to apply for internships from Mar 2026 onward.
+4. **Measure weekly:** projects progress, DSA total solved, mock interview count.
+
+<br>
+
+---
+
+<br>
